@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #2196F3; /* Material Blue */
+    color: #fff; /* White text color */
+    font-family: 'Roboto', sans-serif; /* Material design font */
+}
+
+h2 {
+    color: #FFC107; /* Material Amber */
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Additional styling for better aesthetics */
+h2, p {
+    text-align: center;
+    margin: 10px;
+}
+
