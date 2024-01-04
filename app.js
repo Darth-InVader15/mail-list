@@ -6,7 +6,7 @@ const app = express();
 
 // API Key Placement (using example's approach)
 let defaultClient = SibApiV3Sdk.ApiClient.instance;
-defaultClient.authentications['api-key'].apiKey = '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';
+defaultClient.authentications['api-key'].apiKey = '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';
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
