@@ -1,0 +1,70 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa; /* Light background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    background: linear-gradient(to right, #ec8be4, #8de4a1); /* Bootstrap primary and success colors */
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #ffffff; /* White background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da; /* Bootstrap border color */
+    border-radius: 4px;
+    transition: border-color 0.2s ease; /* Smooth transition for input border color */
+}
+
+input:focus {
+    border-color: #007BFF; /* Bootstrap focus color */
+}
+
+input:placeholder-shown + label {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+label {
+    opacity: 1;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+button {
+    background-color: #007BFF; /* Bootstrap primary color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}

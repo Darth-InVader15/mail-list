@@ -1,10 +1,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const path = require("path"); 
+// const path = require("path"); 
 const app = express();
 
 app.use(bodyParser.urlencoded({extended : true}));
-app.use(express.static(path.join(__dirname)));
+app.use(express.static("public")); //for loading the css and images
 
 
 app.get("/",function(req,res){
@@ -13,7 +13,12 @@ app.get("/",function(req,res){
 })
 
 app.post("/",function(req,res){
-    res.send("404")
+    const name = req.body.Name;
+    const mail = req.body.email;
+
+    console.log(name);
+    // res.write(mail);
+    // res.send();
 })
 
 
