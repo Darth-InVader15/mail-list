@@ -47,7 +47,7 @@ app.post("/", function (req, res) {
         res.sendFile(__dirname + "/fetched.html");
     })
     .catch(function (error) {
-        console.error("API error:", error.text);
+        console.error("API error:", error);
         res.sendFile(__dirname + "/failed.html");
     });
 });
